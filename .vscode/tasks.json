@@ -10,8 +10,6 @@
             "args": [
                 "/p:Configuration=Debug",
                 "/p:Platform=Win32",
-                "/p:SourceLinkCreate=true",
-                "/property:GenerateFullPaths=true",
                 "/t:build",
                 // Do not generate summary otherwise it leads to duplicate errors in Problems panel
                 "/consoleloggerparameters:NoSummary"
@@ -27,8 +25,6 @@
             "args": [
                 "/p:Configuration=Release",
                 "/p:Platform=Win32",
-                "/p:SourceLinkCreate=true",
-                "/property:GenerateFullPaths=true",
                 "/t:build",
                 // Do not generate summary otherwise it leads to duplicate errors in Problems panel
                 "/consoleloggerparameters:NoSummary"
@@ -44,8 +40,6 @@
             "args": [
                 "/p:Configuration=Debug",
                 "/p:Platform=x64",
-                "/p:SourceLinkCreate=true",
-                "/property:GenerateFullPaths=true",
                 "/t:build",
                 // Do not generate summary otherwise it leads to duplicate errors in Problems panel
                 "/consoleloggerparameters:NoSummary"
@@ -61,8 +55,6 @@
             "args": [
                 "/p:Configuration=Release",
                 "/p:Platform=x64",
-                "/p:SourceLinkCreate=true",
-                "/property:GenerateFullPaths=true",
                 "/t:build",
                 // Do not generate summary otherwise it leads to duplicate errors in Problems panel
                 "/consoleloggerparameters:NoSummary"
