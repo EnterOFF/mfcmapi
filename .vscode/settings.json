@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "string": "cpp",
+        "xstring": "cpp"
+    },
+    "search.exclude": {
+        "**/bin/**": true,
+        "**/mfcmapitest/**": true,
+        "**/obj/**": true,
+        "**/packages/**": true,
+    }
+}
