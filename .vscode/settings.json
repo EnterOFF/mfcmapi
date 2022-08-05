@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "**/scripts/*.yml": "azure-pipelines",
         "string": "cpp",
         "xstring": "cpp"
     },
