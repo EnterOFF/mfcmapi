@@ -9,9 +9,13 @@
                 "Debug Unicode (x86)",
                 "Release Unicode (x86)",
                 "Debug Unicode (x64)",
-                "Release Unicode (x64)"
+                "Release Unicode (x64)",
+                "MrMapi Debug Unicode (x86)",
+                "MrMapi Release Unicode (x86)",
+                "MrMapi Debug Unicode (x64)",
+                "MrMapi Release Unicode (x64)"
             ],
-            "dependsOrder": "parallel",
+            "dependsOrder": "sequence",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -30,7 +34,9 @@
             "label": "Prefast All",
             "dependsOn": [
                 "Prefast (x86)",
-                "Prefast (x86)"
+                "Prefast (x86)",
+                "MrMapi Prefast (x86)",
+                "MrMapi Prefast (x86)"
             ],
             "dependsOrder": "parallel",
             "group": {
@@ -52,8 +58,7 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:Configuration=Prefast",
-                "/p:Platform=Win32",
+                "/p:ProjectConfiguration=Prefast|Win32",
                 "/t:build",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -68,8 +73,7 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:Configuration=Prefast",
-                "/p:Platform=x64",
+                "/p:ProjectConfiguration=Prefast|x64",
                 "/t:build",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -84,8 +88,7 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:Configuration=Debug Unicode",
-                "/p:Platform=Win32",
+                "/p:ProjectConfiguration=Debug Unicode|Win32",
                 "/t:build",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -100,8 +103,7 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:Configuration=Release Unicode",
-                "/p:Platform=Win32",
+                "/p:ProjectConfiguration=Release Unicode|Win32",
                 "/t:build",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -116,8 +118,7 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:Configuration=Debug Unicode",
-                "/p:Platform=x64",
+                "/p:ProjectConfiguration=Debug Unicode|x64",
                 "/t:build",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -132,8 +133,7 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:Configuration=Release Unicode",
-                "/p:Platform=x64",
+                "/p:ProjectConfiguration=Release Unicode|x64",
                 "/t:build",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -142,6 +142,96 @@
                 "reveal": "silent"
             },
             "problemMatcher": "$msCompile"
-        }
+        },
+        {
+            "label": "MrMapi Prefast (x86)",
+            "type": "shell",
+            "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
+            "args": [
+                "/p:ProjectConfiguration=Prefast|Win32",
+                "/t:mrmapi",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "MrMapi Prefast (x64)",
+            "type": "shell",
+            "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
+            "args": [
+                "/p:ProjectConfiguration=Prefast|x64",
+                "/t:mrmapi",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "MrMapi Debug Unicode (x86)",
+            "type": "shell",
+            "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
+            "args": [
+                "/p:ProjectConfiguration=Debug Unicode|Win32",
+                "/t:mrmapi",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "MrMapi Release Unicode (x86)",
+            "type": "shell",
+            "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
+            "args": [
+                "/p:ProjectConfiguration=Release Unicode|Win32",
+                "/t:mrmapi",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "MrMapi Debug Unicode (x64)",
+            "type": "shell",
+            "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
+            "args": [
+                "/p:ProjectConfiguration=Debug Unicode|x64",
+                "/t:mrmapi",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "MrMapi Release Unicode (x64)",
+            "type": "shell",
+            "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
+            "args": [
+                "/p:ProjectConfiguration=Release Unicode|x64",
+                "/t:mrmapi",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
     ]
 }
