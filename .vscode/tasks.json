@@ -58,7 +58,8 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:ProjectConfiguration=Prefast|Win32",
+                "/p:Configuration=Prefast",
+                "/p:Platform=Win32",
                 "/t:build",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -73,7 +74,8 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:ProjectConfiguration=Prefast|x64",
+                "/p:Configuration=Prefast",
+                "/p:Platform=x64",
                 "/t:build",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -88,7 +90,8 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:ProjectConfiguration=Debug Unicode|Win32",
+                "/p:Configuration=Debug Unicode",
+                "/p:Platform=Win32",
                 "/t:build",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -103,7 +106,8 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:ProjectConfiguration=Release Unicode|Win32",
+                "/p:Configuration=Release Unicode",
+                "/p:Platform=Win32",
                 "/t:build",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -118,7 +122,8 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:ProjectConfiguration=Debug Unicode|x64",
+                "/p:Configuration=Debug Unicode",
+                "/p:Platform=x64",
                 "/t:build",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -133,7 +138,8 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:ProjectConfiguration=Release Unicode|x64",
+                "/p:Configuration=Release Unicode",
+                "/p:Platform=x64",
                 "/t:build",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -148,7 +154,8 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:ProjectConfiguration=Prefast|Win32",
+                "/p:Configuration=Prefast",
+                "/p:Platform=Win32",
                 "/t:mrmapi",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -163,7 +170,8 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:ProjectConfiguration=Prefast|x64",
+                "/p:Configuration=Prefast",
+                "/p:Platform=x64",
                 "/t:mrmapi",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -178,7 +186,8 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:ProjectConfiguration=Debug Unicode|Win32",
+                "/p:Configuration=Debug Unicode",
+                "/p:Platform=Win32",
                 "/t:mrmapi",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -193,7 +202,8 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:ProjectConfiguration=Release Unicode|Win32",
+                "/p:Configuration=Release Unicode",
+                "/p:Platform=Win32",
                 "/t:mrmapi",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -208,7 +218,8 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:ProjectConfiguration=Debug Unicode|x64",
+                "/p:Configuration=Debug Unicode",
+                "/p:Platform=x64",
                 "/t:mrmapi",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -223,7 +234,8 @@
             "type": "shell",
             "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "args": [
-                "/p:ProjectConfiguration=Release Unicode|x64",
+                "/p:Configuration=Release Unicode",
+                "/p:Platform=x64",
                 "/t:mrmapi",
                 "/consoleloggerparameters:NoSummary"
             ],
