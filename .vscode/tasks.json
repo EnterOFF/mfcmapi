@@ -14,7 +14,7 @@
             "dependsOrder": "parallel",
             "group": {
                 "kind": "build",
-                "isDefault": true,
+                "isDefault": true
             },
             "presentation": {
                 "reveal": "always",
@@ -23,7 +23,8 @@
                 "panel": "new",
                 "showReuseMessage": false,
                 "clear": true
-            }
+            },
+            "problemMatcher": []
         },
         {
             "label": "Debug Unicode (x86)",
@@ -33,11 +34,12 @@
                 "/p:Configuration=Debug Unicode",
                 "/p:Platform=Win32",
                 "/t:build",
-                // Do not generate summary otherwise it leads to duplicate errors in Problems panel
                 "/consoleloggerparameters:NoSummary"
             ],
             "group": "build",
-            "presentation": { "reveal": "silent" },
+            "presentation": {
+                "reveal": "silent"
+            },
             "problemMatcher": "$msCompile"
         },
         {
@@ -48,11 +50,12 @@
                 "/p:Configuration=Release Unicode",
                 "/p:Platform=Win32",
                 "/t:build",
-                // Do not generate summary otherwise it leads to duplicate errors in Problems panel
                 "/consoleloggerparameters:NoSummary"
             ],
             "group": "build",
-            "presentation": { "reveal": "silent" },
+            "presentation": {
+                "reveal": "silent"
+            },
             "problemMatcher": "$msCompile"
         },
         {
@@ -63,11 +66,12 @@
                 "/p:Configuration=Debug Unicode",
                 "/p:Platform=x64",
                 "/t:build",
-                // Do not generate summary otherwise it leads to duplicate errors in Problems panel
                 "/consoleloggerparameters:NoSummary"
             ],
             "group": "build",
-            "presentation": { "reveal": "silent" },
+            "presentation": {
+                "reveal": "silent"
+            },
             "problemMatcher": "$msCompile"
         },
         {
@@ -78,12 +82,13 @@
                 "/p:Configuration=Release Unicode",
                 "/p:Platform=x64",
                 "/t:build",
-                // Do not generate summary otherwise it leads to duplicate errors in Problems panel
                 "/consoleloggerparameters:NoSummary"
             ],
             "group": "build",
-            "presentation": { "reveal": "silent" },
+            "presentation": {
+                "reveal": "silent"
+            },
             "problemMatcher": "$msCompile"
         }
-   ]
+    ]
 }
