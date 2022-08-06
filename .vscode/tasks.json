@@ -24,7 +24,60 @@
                 "showReuseMessage": false,
                 "clear": true
             },
-            "problemMatcher": []
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Prefast All",
+            "dependsOn": [
+                "Prefast (x86)",
+                "Prefast (x86)"
+            ],
+            "dependsOrder": "parallel",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "echo": true,
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Prefast (x86)",
+            "type": "shell",
+            "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
+            "args": [
+                "/p:Configuration=Prefast",
+                "/p:Platform=Win32",
+                "/t:build",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Prefast (x64)",
+            "type": "shell",
+            "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe",
+            "args": [
+                "/p:Configuration=Prefast",
+                "/p:Platform=x64",
+                "/t:build",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
         },
         {
             "label": "Debug Unicode (x86)",
